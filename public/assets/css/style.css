@@ -1,0 +1,35 @@
+body {
+  background-color: #faf6c8;
+  background: url('https://t3.ftcdn.net/jpg/02/10/66/64/240_F_210666441_KXhcysraXFLrSspdqc3Z1cpXEs2tiujt.jpg') repeat fixed;
+  background-position: bottom right;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  border-color: rgb(255, 0, 0);
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.container1 {
+  background-color: #fcfcfc;
+  font-family: 'Staatliches', cursive;
+  opacity: 0.9;
+}
+
+
+
+
+
