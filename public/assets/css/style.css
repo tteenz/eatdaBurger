@@ -29,6 +29,21 @@ li {
   opacity: 0.9;
 }
 
+.row {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .row  {
+    padding-left: 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  button, input {
+    border: 1px solid red;
+  }
+}
 
 
 

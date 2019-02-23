@@ -1,5 +1,6 @@
 <br>
 <br>
+
 <div class="input text-center">
   <div class="container1">
     <h1 class="display-2">You want a burger?</h1>
@@ -11,77 +12,75 @@
 </div>
 
 <br>
-<div class="container">
-  <div class="row justify-content-between">
-    <div class="col-4">
-      <div class="card border-danger mb-3" style="max-width: 18rem;">
-        <div class="card-header">Burgers that are ready!</div>
-        <div class="card-body text-danger">
-          <p class="card-text">
-            <ul>
-              {{#each burgers}}
-              {{#unless devoured}}
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card border-danger mb-3" style="max-width: 18rem;">
+      <div class="card-header">Burgers that are ready!</div>
+      <div class="card-body text-danger">
+        <p class="card-text">
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
 
-              {{> burgers/burger-block devour=true}}
+            {{> burgers/burger-block devour=true}}
 
-              {{/unless}}
-              {{/each}}
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-4">
-      <div class="card border-danger mb-3" style="max-width: 18rem;">
-        <div class="card-header">Burgers that have been eaten!</div>
-        <div class="card-body text-danger">
-          <p class="card-text">
-            <ul>
-              {{#each burgers}}
-              {{#if this.devoured}}
-              <li>
-                <p>{{name}}</p>
-              </li>
-              {{/if}}
-              {{/each}}
-            </ul>
-          </p>
-        </div>
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-4">
-      <Br>
-      <div class="card border-danger mb-3" style="max-width: 18rem;">
-        <div class="card-header">Add a burger!</div>
-        <div class="card-body text-danger">
-          <p class="card-text">
-            <div class="input text-center">
-              <h2>Add a burger</h2>
-              <Br>
-              <form class="create-form">
+
+  <div class="col-sm-4">
+    <div class="card border-danger mb-3" style="max-width: 18rem;">
+      <div class="card-header">Add a burger!</div>
+      <div class="card-body text-danger">
+        <p class="card-text">
+          <div class="input text-center">
+            <h2>Add a burger</h2>
+            <Br>
+            <form class="create-form">
+              <div class="form-group">
+                <label for="burg">Burger: </label>
+
+                <input type="text" id="burg" name="name">
+              </div>
+              <div class="input text-center">
+
                 <div class="form-group">
-                  <label for="burg">Burger: </label>
-
-                  <input type="text" id="burg" name="name">
+                  <input type="radio" name="devoured" value="0"> Prepare<br>
                 </div>
-                <div class="input text-center">
 
-                  <div class="form-group">
-                    <input type="radio" name="devoured" value="0"> Prepare<br>
-                  </div>
+                <button type="submit" class="btn btn-warning">Add burger</button>
+              </div>
+              <br>
+              <br>
+            </form>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
 
-                  <button type="submit" class="btn btn-warning">Add burger</button>
-                </div>
-                <br>
-                <br>
-              </form>
-            </div>
-          </p>
-        </div>
+
+  <div class="col-sm-4">
+    <div class="card border-danger mb-3" style="max-width: 18rem;">
+      <div class="card-header">Burgers that have been eaten!</div>
+      <div class="card-body text-danger">
+        <p class="card-text">
+          <ul>
+            {{#each burgers}}
+            {{#if this.devoured}}
+            <li>
+              <p>{{name}}</p>
+            </li>
+            {{/if}}
+            {{/each}}
+          </ul>
+        </p>
       </div>
     </div>
   </div>
