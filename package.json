@@ -1,12 +1,13 @@
 {
-  "name": "mvc_design",
+  "name": "eatdaburger",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Instructions**",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Tina Tran",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
@@ -15,5 +16,16 @@
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tteenz/eatdaBurger.git"
+  },
+  "keywords": [
+    "burgers"
+  ],
+  "bugs": {
+    "url": "https://github.com/tteenz/eatdaBurger/issues"
+  },
+  "homepage": "https://github.com/tteenz/eatdaBurger#readme"
 }
